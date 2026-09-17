@@ -1,10 +1,10 @@
-<script>
+/*!
+ * Surf format (ELL) - GAM sticky bottom-right unit, mobile + desktop
+ * Requires GPT (googletag) loaded on the page.
+ * Sin dependencia de flags VIads: se lanza siempre que GPT esté disponible.
+ */
 (function () {
   var isDesktop = window.innerWidth >= 1024;
-
-  // --- Interruptor del cliente (mismo que VIads) ---
-  var flag = isDesktop ? window.videoadShowMax : window.videoadShowMin;
-  if (flag !== 1) return;
 
   var PATH  = isDesktop ? '/21665835665/ELL-Surf-Desktop' : '/21665835665/ELL-Surf-Mobile';
   var SCALE = isDesktop ? 0.8 : 0.45;
@@ -61,4 +61,3 @@
     }, REFRESH_MS);
   });
 })();
-</script>
